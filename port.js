@@ -1,11 +1,14 @@
 let revelation = document.getElementById("revealparty");
 let revealBtn = document.getElementById("revealbtn")
 const scroller = document.getElementsByClassName (".scroller")
-const nav = document.querySelector(".forlink")
+const nav = document.querySelector(".links")
 const ham = document.querySelector(".hambar")
 
 ham.addEventListener("click", () => {
- nav.classList.add("forlink--open")
+ nav.classList.toggle("forlink--open")
+ ham.classList.toggle("forham--open")
+
+
 console.log(nav.classList)
 })
 

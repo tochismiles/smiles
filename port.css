@@ -72,7 +72,7 @@ header{
     display: block;
     margin-top: 200px;
     margin-left: 100px;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
 }
 .links{
@@ -85,10 +85,21 @@ header{
     padding-right:  40px  ;
     padding-bottom: 10px;
     color: #000000;
+    transition: all 0.35s ease-in-out;
     
   }
+  .forham--open .bar:nth-child(1){
+    transform: translateY(10px) rotate(45deg) !important;
+  }
+  .forham--open .bar:nth-child(2){
+    opacity: 0 !important;
+  }
+  .forham--open .bar:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg) !important;
+  }
   .forlink--open{
-    transform: translateX(0) !important;
+    transform: translate(0) !important;
+    
   }
   .forlink{
     text-decoration: none;
@@ -103,9 +114,9 @@ header{
     color: black;
   }
   .logo{
-    position: absolute;
+   padding: 5px 10px;
     margin-left: 2px;
-    top: 0em;
+    
   }
 .keeper{
   
@@ -154,17 +165,31 @@ header{
      left: 160px;
     bottom: 400px;
     z-index: 0; 
-}
+} 
 
-#rbtn{
+.rbtn{
     text-align: center;
 
  }
 
-#rbtn :hover{
+.rbtn :hover{
     background-color: black;
     width: 145px;
     height: 36px;
+}
+
+#contbtn{
+     justify-content: center;
+    border: 1px solid;
+    color: white;
+    border-color:rgb(44, 43, 42) ;
+    background-color: rgb(15, 15, 15) ;
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 140px;
+    height: 35px;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 
@@ -218,8 +243,7 @@ header{
     background-color: silver;
   
   }
- #sin1{
-    
+  #sin1{
     width: 650px;
     height: 350px;
     border: 7px solid;
@@ -229,7 +253,7 @@ header{
     margin-right: 50px;
    float: right;
     
-  }
+  } 
   /* #sin2{
     position: relative;
     width: 100px;
@@ -261,7 +285,7 @@ header{
  color: white;
 }
 
-.scroller{
+ .scroller{
     width: 600px;
     overflow: hidden;
     -webkit-mask: linear-gradient(90deg,transparent, white 20%,  white 80%, transparent);
@@ -277,7 +301,7 @@ header{
     display: flex;
     gap: 0.5rem;
     flex-basis: 50px;
-    /* outline: 2px solid grey; */
+
   padding-block: 2rem;
     flex-wrap: nowrap;
     animation: scroll 20s linear infinite;
@@ -309,7 +333,7 @@ header{
 }
 #cs{
     background-color: #CD5C08 ;
-}
+} 
 .txt-span{
     float: right;
     margin-right: 60px;
@@ -326,30 +350,30 @@ header{
     width: 600px;
 }
 
-.casing{
+ .casing{
     height: 5em;
-}
-.phoneshot{
+} 
+ .phoneshot{
    position: relative;
   top: 90px;
   right: 30px;
-}
-.frame{
+} 
+ .frame{
     margin-left: 100px;
     margin-top: 50px;
 }
 .simmer{
     clear: both;
     position: relative;
-}
- #home{
+} 
+#home{
  position: relative;
     left: 920px;
      bottom: 40px; 
 }  
 #reg{
     position: relative;
-    left: 540px;
+    left: 140px;
     bottom: 110px
 }
 #log{
@@ -357,29 +381,48 @@ header{
     left: 280px;   
     bottom: 130px;
     z-index: 0;
-}
-.lamp{
+} 
+ .lamp{
     clear: right;
     width: 100%;
     height: 40vh;
-    border: 1px solid;
     display: flex;
     justify-content: center;
     }
     .shared{
         width: 30%;
-        background-color: #000000;
-        padding: 30px 0px 0px 5px
-    }
+        /* background-color: #000000; */
+         padding: 30px 0px 0px 5px
+    } 
 
     #a:hover{
-        background-color: #532181;
+        /* background-color: #532181; */
+       border: 1px solid;
+        border-radius: 5px;
     }
     #b:hover{
-        background-color: #f51d2f;
+        background-color: rgba(255, 255, 255, 0.108);
+        border: 1px solid;
+        border-radius: 5px;
     }
     #c:hover{
-        background-color: #178541;
+      
+        border: 1px solid;
+        border-radius: 5px; 
+    }
+    #errand{
+        text-align: center;
+    }
+    #rescript{
+        padding: 10px 15px 10px 30px;
+    }
+    footer{
+        margin-top: 100px;
+    }
+    .footdiv{
+        display: flex;
+        justify-content: center;
+
     }
 
 @media (max-width : 650px){
@@ -416,4 +459,208 @@ header{
 
     }
 
+
+
+    .footdiv{
+        display: flex;
+    }
+.txt-span{
+    float: none;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border-left: 0;
+   
+}
+#story{
+    display: block;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 80px;
+}
+.myskil{
+    clear: both;
+    display: block;
+    text-align: center;
+}
+#lancer{
+    text-align: center;
+    margin-top: 80px;
+    position: static;
+}
+#closure{
+    text-align: center;
+}
+.descript{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 400px;
+    position: static;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.scroller{
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg,transparent, white 20%,  white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    border: 5px solid;
+    border-left: 0;
+    border-right: 0;
+
+}
+
+.inner_scroller{
+    width: max-content;
+    display: flex;
+    gap: 0.5rem;
+    flex-basis: 50px;
+    
+  padding-block: 2rem;
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
+
+}
+@keyframes scroll{
+    to{
+        transform: translate(calc(-50% - 0.25rem));
+    }
+}
+.test{
+    background-color: red !important;
+}
+#js{
+    background-color: #315837 ;
+}
+#dv{
+    background-color: #000000 ;
+}
+#pt{
+    background-color: #2e1903 ;
+}
+#pt{
+    background-color: #3f2797 ;
+}
+
+#ux{
+    background-color: #d24fe9 ;
+}
+#cs{
+    background-color: #CD5C08 ;
+}
+.frame{
+    position: relative;
+    /* margin-top: 150px; */
+    padding-left: 20px;
+}
+.phoneshot{
+    position: relative;
+    display: block;
+    bottom: 200px;
+}
+#sin1{
+    width: 400px;
+    height: 180px;
+    border: 3px solid;
+    border-top: 10px solid;
+    border-bottom: 8px solid;
+    border-radius: 8px;
+    margin-right: 50px;
+  float: none;
+  position: relative;
+    
+  }
+
+
+
+
+
+  .lamp{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .shared{
+        width: 100%;
+    }
+    #sim1{
+        margin-left: 10px;
+        margin-top: 50px;
+        width: 200px;
+        height: 400px;
+        border: 3px solid;
+        border-top: 8px solid;
+        border-bottom: 8px solid;
+        border-radius: 6px;
+    
+        
+      }
+      #sim2{
+        position: relative;
+        width: 50px;
+        height: 2px;
+        bottom: 411px;
+        left: 85px;
+        border: 1px rgb(206, 15, 15);
+        background-color: silver;
+      
+      }
+      #cat{
+    
+        left: 70px;
+       bottom: 100px; 
+   }
+   #cat1{
+       
+        left: 140px;
+      bottom: 0px; 
+   }
+   #cat2{
+       
+        left: 200px;
+       bottom: 130px;
+       z-index: 0; 
+   } 
+   .flay{
+    position: static
+   }
+   .scrnshot{
+    position:static;
+    bottom: 50px;
+   }
+   .play{
+    position:static;
+   }
+
+   #home{
+ position: static;
+    margin-left: 20px;
+     bottom: 20px; 
+}  
+#reg{
+    position: static;
+    left: 80px;
+    bottom: 10px
+}
+#log{
+    position: static;
+    left: 0px;   
+    bottom: 30px;
+    z-index: 0;
+} 
+    
+  .last{
+    position: static;
+    bottom: 220px;
+  }  
+  .hold{
+    display: flex;
+  }
 }
